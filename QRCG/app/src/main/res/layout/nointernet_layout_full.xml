@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="bottom"
+        android:layout_marginTop="0dp"
+        android:background="#ffe94b">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/no_internet_string"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2c427f"
+
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/ok_button"
+            style="@style/style1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="Try Again"
+            android:visibility="invisible" />
+    </FrameLayout>
+</FrameLayout>

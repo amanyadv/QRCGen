@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QRCG</string>
+    <string name="no_internet_string">Check internet connection...</string>
+</resources>
