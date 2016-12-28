@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        showOpenAndShareBt();
+        //showOpenAndShareBt();
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -212,7 +212,8 @@ public class MainActivity extends AppCompatActivity {
             AppUtil.dismissProgressDialog(progressDialog);
             if (aBoolean){
                 AppUtil.createAlertDialog(MainActivity.this, "", "Your QR codes file is ready, You can check by click on open file button.",  "ok", false, null);
-                showOpenAndShareBt();
+                openFileBt.setVisibility(View.VISIBLE);
+                //showOpenAndShareBt();
             }else {
                 AppUtil.createAlertDialog(MainActivity.this, "", "Error creating qr code, Please try again.",  "ok", false, null);
             }
@@ -230,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void showOpenAndShareBt() {
+   /* private void showOpenAndShareBt() {
         if (folderName != null && folderName.length() > 0) {
             File appFolder = FileCreator.getOrCreateFolder(folderName);
             if (appFolder != null && appFolder.listFiles() != null && appFolder.listFiles().length > 0) {
@@ -241,6 +242,6 @@ public class MainActivity extends AppCompatActivity {
                 //shareFileBt.setVisibility(View.GONE);
             }
         }
-    }
+    }*/
 
 }
